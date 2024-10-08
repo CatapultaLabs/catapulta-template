@@ -1,0 +1,2 @@
+npm run script:generate-aws-template
+git add .templates
