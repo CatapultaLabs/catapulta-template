@@ -60,15 +60,15 @@ const copyFilesFromTemplate = async (octokit: Octokit, owner: string, repo: stri
 
         let sha: string | undefined;
 
-        if (relativePath === 'README.md') {
-            const {data} = await octokit.rest.repos.getContent({
-                owner,
-                repo,
-                path: 'README.md'
-            })
-
-            sha = data.sha;
-        }
+        // if (relativePath === 'README.md') {
+        //     const { data } = await octokit.rest.repos.getContent({
+        //         owner,
+        //         repo,
+        //         path: 'README.md'
+        //     })
+        //
+        //     sha = data.sha;
+        // }
 
         const content = fs.readFileSync(absolutePath);
 
