@@ -12,7 +12,7 @@ export class CatapultaStack extends Stack {
 
         // VPC setup
         const vpc = new ec2.Vpc(this, 'CatapultaVpc', {
-            maxAzs: 2, // Number of availability zones
+            maxAzs: 1, // Number of availability zones
         });
 
         // ECS cluster
